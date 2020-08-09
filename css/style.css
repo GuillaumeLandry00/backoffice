@@ -1,0 +1,355 @@
+/* CSS reset
+   --------- */
+
+html,
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+}
+
+/* 1- règles générales
+   ------------------- */
+
+body {
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* 2- barre de navigation
+   ---------------------- */
+
+nav ul {
+    display: flex;
+    margin-top: 20px;
+    list-style: none;
+}
+
+nav ul li {
+    margin-right: 5px;
+}
+
+nav ul li a {
+    display: block;
+    padding: 10px 30px;
+    text-decoration: none;
+    color: #000;
+    background-color: bisque;
+}
+
+nav ul li a.active,
+nav ul li a:hover {
+    background-color: burlywood;
+}
+
+/* 3- main
+   ------- */
+
+h1 {
+    margin: 10px 0;
+    margin-left: 2%;
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+/* 3-1 tableau affichage de liste
+   ------------------------------ */
+
+table {
+    border-spacing: 0;
+}
+
+th,
+td {
+    padding: 5px 20px;
+    text-align: left;
+    border-bottom: 1px solid #000;
+}
+
+td a {
+    margin-right: 10px;
+}
+
+/* 3-2 formulaires
+   --------------- */
+
+#authentification input {
+    margin-bottom: 20px;
+}
+
+#recherche label,
+#tri label {
+    display: inline-block;
+    width: 90px;
+    margin-right: 5px;
+}
+
+#recherche input,
+#tri input,
+#tri select {
+    display: inline-block;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    width: 250px;
+    line-height: 24px;
+}
+
+#tri select {
+    height: 28px;
+}
+
+#tri input[type='radio'] {
+    margin-right: 0;
+    width: auto;
+    vertical-align: text-top;
+}
+
+#tri input + label {
+    width: auto;
+    padding-right: 10px;
+}
+
+#recherche input[type='submit'],
+#tri input[type='submit'] {
+    width: 100px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input,
+select {
+    box-sizing: border-box;
+    display: block;
+    line-height: 24px;
+    margin-bottom: 5px;
+}
+
+
+
+.form-suppression input[type='submit'] {
+    display: inline-block;
+    margin: 30px 30px 0 0;
+    width: 100px;
+}
+
+#confirmation {
+    display: hidden;
+}
+
+nav > a {
+    padding: 10px;
+}
+
+nav > a:first-of-type {
+    padding-left: 0;
+}
+
+#hidden {
+    display: none;
+    margin-top: 5px;
+    flex-direction: row;
+    border: 2px solid black;
+    padding: 5px;
+    width: max-content;
+}
+
+#hidden input[type=submit] {
+    width: 50px;
+    height: 40px;
+    margin-left: 50px;
+    margin-top: 10px;
+}
+
+#hidden button {
+    width: 50px;
+    height: 40px;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+/*****************************/
+html {
+}
+
+body {
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/*------------Style Page authentification------------------*/
+.login > form {
+    border: 2px solid black;
+    width: 300px;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -20px;
+    z-index: 2;
+    background: white;
+    margin-bottom: 125px;
+}
+
+.login > form > section > p {
+    color: red;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: underline;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+.login > h1 {
+    margin-left: auto;
+    margin-top: 50px;
+    margin-right: auto;
+}
+
+.login > form > section > input {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.login > form > section > input:last-of-type {
+    margin-right: 77px;
+}
+
+.login > form > section > label {
+    margin-left: 80px;
+}
+
+.login > form > section {
+    margin-top: 50px;
+    z-index: 2;
+}
+
+/*-------------Style header et footer general-----------------*/
+header,
+footer {
+    height: 50px;
+    width: 100%;
+    background: #303030;
+}
+
+header {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    height: 70px;
+}
+header>a{
+    margin-left: 30px;
+    margin-top: auto;
+}
+footer {
+    margin-top: auto;
+}
+
+
+img {
+    width: 100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+nav {
+    display: flex;
+    margin-top: auto;
+    margin-left: 30px;
+}
+
+nav > a {
+    color: white;
+    text-decoration: none;
+    font-size: 21px;
+}
+
+nav > a:hover {
+    transition: color;
+    transition-delay: 100ms;
+    color: blue;
+    transition-duration: 200ms;
+    transition-timing-function: ease-in-out;
+}
+
+.ajout {
+    padding: 20px;
+    color: blue;
+    margin: 5px;
+    background-color: #303030;
+    width: max-content;
+    text-decoration: none;
+    margin-left: 30px;
+}
+.ajout:hover{
+    opacity: 0.8;
+    transition-property: opacity, text-decoration, color;
+    transition-duration: 200ms;
+    transition-delay: 100ms;
+    text-decoration: underline;
+    color:gold;
+}
+
+.deconnexion{
+    margin-left: 30px;
+    color:red;
+}
+.deconnexion>a{
+    color:gold;
+}
+/*----------Style des tables-----------*/
+/*MediaQUERY ajouter*/
+#conteneur {
+  /*  overflow-x: auto;*/
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid black;
+    padding: 5px;
+}
+#conteneurSec{
+    margin-left: 30px;
+    width: 96%;
+}
+table {
+    display: flex;
+    overflow-x: auto;
+}
+#pageAjout{
+    margin-left: 30px;
+}
+.recherche {
+    display: flex;
+    margin-top: 20px;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*Pour pagination*/
+.pagination {
+    margin-bottom: 10px;
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+}
+.pagination>a{
+    text-decoration: none;
+}
